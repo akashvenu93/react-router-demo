@@ -12,7 +12,7 @@ const Login = () => {
   const redirectPath = location?.state?.path || "/";
   const loginHandler = () => {
     auth.login(userName);
-    navigate("/profile", { replace: true });
+    navigate(redirectPath, { replace: true });
   };
   return (
     <>
